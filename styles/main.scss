@@ -5,15 +5,113 @@ html {
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 body {
+    // height: 100dvh;
+    // width: 100dvw;
+    // height: 100vh;
+    // width: 100vw;
     background-image: linear-gradient(90deg,#52c7dc, #f375f3);
 }
 
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 60px;
+
+    h1 {
+        white-space: nowrap;
+    }
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    a:hover {
+        color: white;
+    }
+}
+
+.nav-items {
+    display: flex;
+    list-style: none;
+    
+
+    li {
+        margin: auto 10px;
+    }
+
+    .about-us-link {
+        white-space: nowrap;
+    }
+}
+
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    background-color: #80808081;
+    max-width: fit-content;
+    padding: 12px;
+    border-radius: 4px;
+}
+
 button {
-    background-color: white;
+    background-color: #ffe8f7;
     border: none;
-    padding: 10px;
-    margin: 10px;
+    padding: 21px;
+    margin: 1px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.display-container {
+    background-color: #ffe8f7;
+    min-height: 54px;
+    width: 220px;
+    border-radius: 4px;
+    opacity: 0.6;
+}
+
+#calculation-element, #result-element {
+    min-height: 24px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: right;
+    margin: auto 10px;
+    // max-width: 175px;
+    overflow-x: hidden;
+}
+
+.input-container {
+    width: 220px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#clear-all-btn, #backspace-btn {
+    width: 50%;
+}
+
+#equals-btn {
+width: 105px;
+}
+
+#plus-btn {
+    width: 47.4px;
 }

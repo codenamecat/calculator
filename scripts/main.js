@@ -1,22 +1,7 @@
+// Calculator "screen"
 const calculationElement = document.getElementById('calculation-element');
 const resultElement = document.getElementById('result-element');
-
-// const number0 = document.getElementById('0');
-// const number1 = document.getElementById('1');
-// const number2 = document.getElementById('2');
-// const number3 = document.getElementById('3');
-// const number4 = document.getElementById('4');
-// const number5 = document.getElementById('5');
-// const number6 = document.getElementById('6');
-// const number7 = document.getElementById('7');
-// const number8 = document.getElementById('8');
-// const number9 = document.getElementById('9');
-
-// const plusBtn = document.getElementById('plus-btn');
-// const minusBtn = document.getElementById('minus-btn');
-// const multiplyBtn = document.getElementById('multiply-btn');
-// const divideBtn = document.getElementById('divide-btn');
-
+// equals button
 const equalsBtn = document.getElementById('equals-btn');
 
 const backspaceBtn = document.getElementById('backspace-btn');
@@ -26,7 +11,7 @@ const calcBtns = [...document.querySelectorAll('.calc-btn')];
 
 calcBtns.forEach((button) => {
     button.addEventListener('click', () => {
-            displayCalculation(button.textContent);
+        displayCalculation(button.textContent);
     });
 });
 
@@ -40,8 +25,8 @@ clearAllBtn.addEventListener('click', () => {
 });
 
 equalsBtn.addEventListener('click', () => {
-        const result = eval(calculationElement.textContent);
-        resultElement.textContent = result;
+    const result = eval(calculationElement.textContent);
+    resultElement.textContent = result;
 });
 
 backspaceBtn.addEventListener('click', () => {
@@ -63,3 +48,19 @@ function removeLastCharacter() {
     // if (calculationElement.textContent[calculationElement.textContent.length-1] == "+" || "-" || "/" || "*") {
     //     console.log("WTF DOOD");
     // } else {}
+
+// const number0 = document.getElementById('0');
+// const number1 = document.getElementById('1');
+// const number2 = document.getElementById('2');
+// const number3 = document.getElementById('3');
+// const number4 = document.getElementById('4');
+// const number5 = document.getElementById('5');
+// const number6 = document.getElementById('6');
+// const number7 = document.getElementById('7');
+// const number8 = document.getElementById('8');
+// const number9 = document.getElementById('9');
+
+// const plusBtn = document.getElementById('plus-btn');
+// const minusBtn = document.getElementById('minus-btn');
+// const multiplyBtn = document.getElementById('multiply-btn');
+// const divideBtn = document.getElementById('divide-btn');
